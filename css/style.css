@@ -1780,4 +1780,101 @@ footer {
 
     }
 
+
+}
+
+/* ==========================================================
+   ICONOS DE CONTACTO
+   ========================================================== */
+
+.footer-contact {
+    gap: 14px;
+}
+
+.footer-contact .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255,255,255,.65);
+    font-size: 13px;
+    transition: color .3s ease, transform .3s ease;
+}
+
+/* Contenedor de los iconos */
+
+.contact-icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(0,217,255,.22);
+    border-radius: 11px;
+
+    background: rgba(0,217,255,.06);
+    color: var(--blue-light);
+
+    transition: all .3s ease;
+}
+
+.contact-icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+/* Efectos al pasar el cursor */
+
+.footer-contact .contact-link:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.footer-contact .contact-link:hover .contact-icon {
+    border-color: var(--cyan);
+    background: rgba(0,217,255,.15);
+    box-shadow: 0 0 18px rgba(0,217,255,.2);
+}
+
+/* Colores de cada plataforma */
+
+.contact-icon.whatsapp {
+    color: #25D366;
+}
+
+.contact-icon.facebook {
+    color: #1877F2;
+}
+
+.contact-icon.instagram {
+    color: #E879B9;
+}
+
+.contact-icon.tiktok {
+    color: #ffffff;
+}
+
+.contact-icon.email {
+    color: var(--beige);
+}
+
+/* Redes sociales pendientes */
+
+.footer-contact .contact-disabled {
+    opacity: .55;
+    cursor: default;
+}
+
+.footer-contact .contact-disabled small {
+    display: block;
+    font-size: 10px;
+    color: var(--beige);
+    line-height: 1.2;
+}
+
+.footer-contact .contact-disabled:hover {
+    transform: none;
+    color: rgba(255,255,255,.65);
 }
