@@ -51,7 +51,7 @@ fetch("productos.json")
 
         if (categoriaSeleccionada && categoryTitle) {
 
-            categoryTitle.textContent = categoriaSeleccionada;
+            categoryTitle.textContent = categoriaSeleccionada.toUpperCase();
 
         }
 
@@ -86,7 +86,7 @@ fetch("productos.json")
 
             const precio = Number(producto.precio || 0);
 
-            card.innerHTML = `
+           card.innerHTML = `
 
                 <div class="product-image">
 
@@ -99,19 +99,7 @@ fetch("productos.json")
 
                 <div class="product-info">
 
-                    <span class="product-category">
-                        ${producto.categoria}
-                    </span>
-
-                    <h3>
-                        ${producto.nombre}
-                    </h3>
-
                     <div class="product-bottom">
-
-                        <strong>
-                            $${precio.toFixed(2)}
-                        </strong>
 
                         <button type="button">
                             Ver →
@@ -122,6 +110,14 @@ fetch("productos.json")
                 </div>
 
             `;
+
+            card.querySelector("button").addEventListener("click", () => {
+
+                const productoId = normalizarTexto(producto.nombre);
+
+                window.location.href = `producto.html?producto=${productoId}`;
+
+            });
 
             productsGrid.appendChild(card);
 
