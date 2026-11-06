@@ -4,9 +4,9 @@
         "categoria": "Impresión 3D",
         "precio": 40,
         "imagen": "assets/productos/impresion-3d/thermo-porta-balsamo.jpg"
-    }
-]
-[
+    },
+
+
   {
     "codigo": "IMN01",
     "nombre": "Iman Bob Esponja Nal",
@@ -14,9 +14,9 @@
     "precio": 27.0,
     "descripcion": "Iman con la figura de Bob esponja nalgon",
     "imagen": "assets/productos/impresion-3d/IMN01.webp"
-  }
-]
-[
+  },
+
+
   {
     "codigo": "LLAV07",
     "nombre": "Llavero Calavera MM",
@@ -24,9 +24,9 @@
     "precio": 10.5,
     "descripcion": "Llavero de una calavera con moño color morado",
     "imagen": "assets/productos/impresion-3d/LLAV07.webp"
-  }
-]
-[
+  },
+
+
   {
     "codigo": "LLAV05",
     "nombre": "Llavero Cocodrilo Art",
