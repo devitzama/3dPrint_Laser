@@ -1895,3 +1895,39 @@ footer {
     object-fit: contain;
     border-radius: 15px;
 }
+
+/* ==========================================================
+   ROTACIÓN DE IMÁGENES EN CATEGORÍAS
+   ========================================================== */
+
+.service-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-carousel-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 12px;
+
+    opacity: 0;
+
+    transition: opacity .5s ease;
+}
+
+.service-carousel-image.visible {
+    opacity: 1;
+}
+
+.service-image span {
+    position: relative;
+    z-index: 2;
+
+    pointer-events: none;
+}
